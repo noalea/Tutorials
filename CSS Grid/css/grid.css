@@ -1,0 +1,54 @@
+.container {
+  background-color: #fff;
+  margin: 80px auto;
+  width: 1140px;
+}
+
+section {
+  display: grid;
+  grid-template-rows: 160px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+img {
+  grid-column: span 1;
+  grid-row: span 2;
+  max-width: 100%;
+}
+img.twoByThree {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+img.threeByFour {
+  grid-column: span 3;
+  grid-row: span 4;
+}
+
+
+@media (max-width: 1180px) {
+  .container {
+    width: 500px;
+  }
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+  img.threeByFour {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 250px;
+  }
+  section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  img {
+    grid-column: span 1!important;
+    grid-row: span 1!important;
+  }
+}
