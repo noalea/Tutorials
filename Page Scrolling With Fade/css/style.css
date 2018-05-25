@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700|Lobster');
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Lobster', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+section, footer {
+  padding: 200px 150px;
+}
+
+section.intro {
+  background-image: url(../images/fun-bg.png);
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
+
+section p {
+  max-width: 500px;
+}
+
+footer {
+  text-align: center;
+}
